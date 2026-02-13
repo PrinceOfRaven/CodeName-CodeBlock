@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang ="ru"> 
+<head>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Omegon">
+    <meta name="keywords" content="CodeBlock, programming">
+
+    <title>HITSBlock</title>
+    <link rel="stylesheet" href ="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="panel">
+            <h2>Блоки</h2>
+            <div class="block" draggable="'true" id="declarationBlock">
+                int
+                <input type="text" placeholder="a,b,c" value="x,y">
+                <button>+</button>
+            </div>
+            <p class="hint">Перетащи меня</p>
+        </div>
+
+        <div class="workspace" id="workspace">
+            <h2 style="padding: 15px; margin:0;">Рабочая область</h2>
+            <div class="variables" id="variablesPanel">
+                <h3>Переменные:</h3>
+                <div id="variablesList"></div>
+            </div>
+            <div class="workspace-content">
+                <div id="workspaceBlocks"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
