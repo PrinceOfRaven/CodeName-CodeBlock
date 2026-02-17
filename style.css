@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+    height: 100vh;
+}
+
+
+.app {
+    display: flex;
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: calc(100vh - 40px);
+}
+
+.panel {
+    width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    height: fit-content;
+}
+
+.workspace {
+    flex: 1;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.workspace h2 {
+    padding: 15px;
+    margin: 0;
+    border-bottom: 1px solid #312ec9;
+    text-shadow: 2px 2px 2 rgba(0,0,0,0.4);
+}
+
+.workspace-content {
+    flex: 1;
+    overflow: auto;
+    position: relative;
+    background: #fafafa;
+}
+
+#workspaceBlocks {
+    position: relative;
+    width: 2000px;
+    height: 2000px;
+    background-image: 
+        linear-gradient(rgba(33,150,243,0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(33,150,243,0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+/* Блоки */
+.block {
+    background: #e3f2fd;
+    border: 2px solid #2196f3;
+    border-radius: 6px;
+    padding: 8px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    cursor: move;
+}
+
+.block input {
+    padding: 4px;
+    border: 1px solid #90caf9;
+    border-radius: 4px;
+}
+
+.block button {
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+/* Скроллбар */
+.workspace-content::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+.workspace-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 6px;
+}
+
+.workspace-content::-webkit-scrollbar-thumb {
+    background: #ff9800;
+    border-radius: 6px;
+}
+
+.workspace-content::-webkit-scrollbar-thumb:hover {
+    background: #f57c00;
+}
+
+
+
+
