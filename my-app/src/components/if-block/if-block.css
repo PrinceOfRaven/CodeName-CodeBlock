@@ -1,0 +1,289 @@
+/* #region внешка блока */
+
+.if-block {
+    position: absolute;
+    width: 500px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1000;
+    transition: all 0.2s;
+}
+
+.if-block.embedded {
+    position:relative;
+    width: 100%;
+    margin-bottom: 10px;
+    box-shadow: none;
+}
+
+.if-block.active {
+    border: 3px solid #4caf50;
+}
+
+.if-block.inactive {
+    border: 3px solid #ccc;
+    opacity:0.8;
+}
+
+.if-block-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: move;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.if-block-header-left {
+    display:flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.if-block-status {
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    color:white;
+}
+
+.if-block-status.if {
+    background-color:  #4caf50;
+}
+
+.if-block-status.else {
+    background-color: #2196f3;
+}
+
+.if-block-status.none {
+    background-color: #f44336;
+}
+
+
+
+.if-block.level-0 {
+    background-color: #e1f5fe; 
+    border-color: #03a9f4;
+}
+
+.if-block-header.level-0 {
+    color: #01579b;
+}
+
+.if-block.level-1 {
+    background-color: #fff3e0; 
+    border-color: #ff9800;
+}
+
+.if-block-header.level-1 {
+    color: #e65100;
+}
+
+.if-block.level-2 {
+    background-color: #f3e5f5; 
+    border-color: #9c27b0;
+}
+
+.if-block-header.level-2 {
+    color: #4a148c;
+}
+
+.if-block.level-3 {
+    background-color: #e8f5e9; 
+    border-color: #4caf50;
+}
+
+.if-block-header.level-3 {
+    color: #1e5e1e;
+}
+
+.if-block.level-4 {
+    background-color: #ffe0b2; 
+    border-color: #ff5722;
+}
+
+/* #endregion */
+
+/* #region Условия */
+
+.if-conditions {
+    background-color:  #fff;
+    padding: 15px;
+    border-radius:  8px;
+    margin-bottom: 15px;
+}
+
+.if-conditions-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* #endregion */
+
+/* #region Внутренняя область для вкладывания блоков */
+
+.if-branch {
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.if-branch.active {
+    border: 2px solid #4caf50;
+}
+
+.if-branch.inactive {
+    border: 2px solid #ccc;
+}
+
+.if-branch-header {
+    color:white;
+    padding: 8px 12px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.if-branch-header.then {
+    background-color: #4caf50;
+}
+
+.if-branch-header.else {
+    background-color: #2196f3;
+}
+
+.if-branch-content {
+    padding: 15px;
+    min-height: 100px;
+}
+
+.if-branch-content.active {
+    background-color: #f1f8e9;
+}
+
+.if-branch-content.inactive {
+    background-color: #fafafa;
+}
+
+.if-branch-empty {
+    text-align: center;
+    color: #999;
+    padding: 30px;
+    border: 2px dashed #ccc;
+}
+
+/* #endregion */
+
+ /* #region Для вложенных блоков */ 
+
+ .nested-block {
+    margin-bottom: 15px;
+ }
+
+.nested-block-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+}
+
+.nested-block-step {
+    font-weight: bold;
+}
+
+.nested-block-step.then {
+    color:  #4caf50;
+}
+
+.nested-block-step.else {
+    color: #2196f3;
+}
+
+.nested-block-remove {
+    background-color:  #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+/* #endregion */
+
+/* #region Для управления кнопками */
+
+
+.if-button:hover {
+    opacity: 0.8;
+}
+
+.green {
+    background-color: green;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.if-button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+.if-error {
+    color: red;
+    font-size: 12px;
+    text-align: center;
+    background-color: #ffebee;
+    padding: 4px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+/* #endregion */
+
+/* #region Панель контроля */
+
+
+.if-btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.drop-zone {
+    min-height: 100px;
+    transition: all 0,2s;
+}
+
+.drop-zone.drag-over {
+    background-color: #e3f2fd;
+    border: 2px dashed #2196f3;
+}
+
+
+

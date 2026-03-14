@@ -1,0 +1,110 @@
+.condition-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.condition-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+
+.logical-op-select {
+    padding: 8px;
+    border: 2px solid;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #fff;
+    min-width: 70px;
+}
+
+
+.comparison-select {
+    padding: 8px;
+    border: 2px solid;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #fff;
+    min-width: 80px;
+}
+
+
+.remove-condition-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.remove-condition-btn:hover {
+    opacity: 0.8;
+}
+
+
+.add-condition-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    width: fit-content;
+    align-self: center;
+    margin-top: 5px;
+}
+
+.add-condition-btn:hover {
+    opacity: 0.8;
+}
+
+
+.expression-input {
+    display: flex;
+    flex-direction: column;
+    min-width: 100px;
+}
+
+.expression-type-select {
+    font-size: 11px;
+    margin-bottom: 2px;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 2px;
+}
+
+.expression-number-input,
+.expression-variable-select {
+    width: 100%;
+    padding: 4px;
+    border: 2px solid;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.number-input::-webkit-outer-spin-button,
+.number-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+

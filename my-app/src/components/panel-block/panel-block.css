@@ -1,0 +1,33 @@
+.block {
+    background: #e3f2fd;
+    border: 2px solid #2196f3;
+    border-radius: 6px;
+    padding: 8px;
+    align-items: center;
+    cursor: move;
+    margin-top: 10px;
+    
+}
+
+.block-text {
+    display: flex; 
+    align-items: center;
+    gap: 6px; 
+    font-size: 13px; 
+    font-weight: bold;
+}
+
+.block input {
+    padding: 4px;
+    border: 1px solid #90caf9;
+    border-radius: 4px;
+}
+
+.block button {
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+}

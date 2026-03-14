@@ -1,11 +1,10 @@
-window.store = {
+export const Store = {
     variables: {},
     blocks: [],
+    arrayList: {},
     nextId: 1,
     draggingBlock: null,
-    dragOffset: {x:0, y:0},
     consoleLogs: []
 };
 
-console.log('store.js загружен');
-
+console.log("хранилище загружено");

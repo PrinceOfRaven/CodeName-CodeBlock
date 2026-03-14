@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;  
+}
+
+.app {
+    display: flex;
+    gap: 1.5vw;
+    padding: 1.5vh 1.5vw;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.panel {
+    width: 18vw;
+    min-width: 250px;
+    max-width: 300px;
+    background: white;
+    padding: 1.5vh 1vw;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    height: fit-content;
+    overflow-y: auto;
+    flex-shrink: 0;
+}
+
+.app-button {
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.app-btns {
+    margin-top: 20px;
+    display: flex;  
+    gap: 10px;
+    flex-direction: column
+}
+
+.right-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    min-width: 0;
+    height: 100%;
+    overflow: hidden;
+}
